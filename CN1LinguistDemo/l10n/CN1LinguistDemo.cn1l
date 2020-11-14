@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l10n name="mybundle">
+   <lang name="fr">
+      <entry value="Bienvenue" key="Welcome"/>
+      <entry value="Connecter" key="Connect"/>
+      <entry value="Identifiant" key="Username"/>
+      <entry value="Mot de passe" key="Password"/>
+      <entry value="true" key="@rtl"/>
+   </lang>
+</l10n>

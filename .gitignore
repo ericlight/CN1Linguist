@@ -1,0 +1,15 @@
+
+CN1Linguist/.qmake.stash
+debug/
+release/
+CN1Linguist/CN1Linguist.pro.user
+CN1Linguist/CN1Linguist_resource.rc
+CN1Linguist/Makefile
+CN1Linguist/Makefile.Debug
+CN1Linguist/Makefile.Release
+CN1Linguist/object_script.CN1Linguist.Debug
+CN1Linguist/object_script.CN1Linguist.Release
+CN1Linguist/ui_cn1designerpath.h
+CN1Linguist/ui_editproperty.h
+CN1Linguist/ui_mainwindow.h
+CN1Linguist/ui_savecn1resfile.h

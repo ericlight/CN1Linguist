@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="11" useXmlUI="false">
+    <l10n name="myBundle">
+        <lang name="fr">
+            <entry key="Username" value="Identifiant" />
+            <entry key="Connect" value="Se connecter" />
+            <entry key="Password" value="Mot de passe" />
+            <entry key="Welcome" value="Bienvenue" />
+        </lang>
+    </l10n>
+    <theme name="Theme">
+        <val key="@includeNativeBool" value="true" />
+    </theme>
+</resource>

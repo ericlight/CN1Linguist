@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Codename One Linguist</string>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="cheminDossierSource">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Your Codename One project folder path</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="choisirDossierSource">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="images.qrc">
+          <normaloff>:/new/prefix1/images/Folder.png</normaloff>:/new/prefix1/images/Folder.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="scannerDossierSource">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Alt+S to scan and extract words from source files</string>
+        </property>
+        <property name="text">
+         <string>Scan project source files  </string>
+        </property>
+        <property name="icon">
+         <iconset resource="images.qrc">
+          <normaloff>:/new/prefix1/images/search2.png</normaloff>:/new/prefix1/images/search2.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string>Alt+S</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Current Language :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="currentLang">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="viderZoneTraduction">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Remove all keys and values</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="images.qrc">
+          <normaloff>:/new/prefix1/images/supprimer1.png</normaloff>:/new/prefix1/images/supprimer1.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="key">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>230</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="placeholderText">
+         <string>Name of the new Key</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addKey">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Add Property</string>
+        </property>
+        <property name="icon">
+         <iconset resource="images.qrc">
+          <normaloff>:/new/prefix1/images/plus.png</normaloff>:/new/prefix1/images/plus.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="zoneTraduction">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>KEY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>VALUE</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_in_CodenameOne_Resource_file"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecent_project_file"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionSet_CodenameOne_Designer_app"/>
+    <addaction name="actionEnable_Disable_Fusion_Theme"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuCodename_One_Keys">
+    <property name="title">
+     <string>Codename One Keys</string>
+    </property>
+    <addaction name="actionAdd_RTL_Key"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_General_Keys"/>
+    <addaction name="actionAdd_Calendar_Keys"/>
+    <addaction name="actionAdd_PullToRefresh_Keys"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+   <addaction name="menuCodename_One_Keys"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomToolBarArea|Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_in_CodenameOne_Resource_file"/>
+   <addaction name="actionSet_CodenameOne_Designer_app"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>406</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Languages</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Translation Bundle name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="bundleName">
+       <property name="placeholderText">
+        <string>Enter the bundle name here</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Languages</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="countryCode">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Choose a language</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>English (en)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Spanish (es)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Portuguese (pt)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>French (fr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>German (de)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chinese (zh)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Afar (aa)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Abkhazian (ab)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Avestan (ae)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Afrikaans (af)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Akan (ak)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Amharic (am)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aragonese (an)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Arabic (ar)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Assamese (as)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Avaric (av)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aymara (ay)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Azerbaijani (az)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bashkir (ba)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Belarusian (be)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bulgarian (bg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bihari (bh)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bislama (bi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bambara (bm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bengali (bn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tibetan (bo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Breton (br)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bosnian (bs)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Catalan (ca)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chechen (ce)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chamorro (ch)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Corsican (co)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cree (cr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Czech (cs)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Old Church Slavonic (cu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chuvash (cv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Welsh (cy)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Danish (da)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Divehi (dv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dzongkha (dz)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ewe (ee)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Greek (el)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Esperanto (eo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Estonian (et)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Basque (eu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Persian (fa)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fulah (ff)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Finnish (fi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fijian (fj)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Faroese (fo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Western Frisian (fy)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Irish (ga)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Scottish Gaelic (gd)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Galician (gl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Guarani (gn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gujarati (gu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Manx (gv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hausa (ha)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hebrew (he)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hindi (hi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hiri Motu (ho)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Croatian (hr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Haitian (ht)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hungarian (hu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Armenian (hy)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Herero (hz)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Interlingua (ia)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Indonesian (id)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Interlingue (ie)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Igbo (ig)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sichuan Yi (ii)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Inupiaq (ik)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ido (io)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Icelandic (is)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Italian (it)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Inuktitut (iu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Japanese (ja)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Javanese (jv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Georgian (ka)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kongo (kg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kikuyu (ki)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kwanyama (kj)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kazakh (kk)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kalaallisut (kl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Khmer (km)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kannada (kn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Korean (ko)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kanuri (kr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kashmiri (ks)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kurdish (ku)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Komi (kv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cornish (kw)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kirghiz (ky)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Latin (la)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Luxembourgish (lb)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ganda (lg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Limburgish (li)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lingala (ln)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lao (lo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lithuanian (lt)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Luba-Katanga (lu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Latvian (lv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Malagasy (mg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marshallese (mh)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Maori (mi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Macedonian (mk)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Malayalam (ml)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mongolian (mn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marathi (mr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Malay (ms)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Maltese (mt)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Burmese (my)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nauru (na)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Norwegian Bokmal (nb)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>North Ndebele (nd)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nepali (ne)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ndonga (ng)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dutch (nl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Norwegian Nynorsk (nn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Norwegian (no)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>South Ndebele (nr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Navajo (nv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chichewa (ny)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Occitan (oc)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ojibwa (oj)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oromo (om)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oriya (or)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ossetian (os)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Panjabi (pa)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pali (pi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Polish (pl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pashto (ps)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Quechua (qu)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Reunionese (rc)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Romansh (rm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kirundi (rn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Romanian (ro)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Russian (ru)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kinyarwanda (rw)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sanskrit (sa)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sardinian (sc)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sindhi (sd)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Northern Sami (se)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sango (sg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Serbo-Croatian (sh)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sinhalese (si)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slovak (sk)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slovenian (sl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Samoan (sm)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shona (sn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Somali (so)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Albanian (sq)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Serbian (sr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Swati (ss)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sotho (st)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sundanese (su)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Swedish (sv)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Swahili (sw)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tamil (ta)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Telugu (te)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tajik (tg)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thai (th)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tigrinya (ti)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Turkmen (tk)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tagalog (tl)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tswana (tn)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tonga (to)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Turkish (tr)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tsonga (ts)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tatar (tt)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Twi (tw)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tahitian (ty)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Uighur (ug)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ukrainian (uk)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Urdu (ur)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Uzbek (uz)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Venda (ve)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Viet Namese (vi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Volapuk (vo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Walloon (wa)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wolof (wo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Xhosa (xh)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yiddish (yi)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yoruba (yo)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zhuang (za)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zulu (zu)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addLanguage">
+       <property name="text">
+        <string>Add language</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/new/prefix1/images/plus.png</normaloff>:/new/prefix1/images/plus.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Translated languages</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="translatedLangList">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="deleteTranslatedLang">
+         <property name="text">
+          <string>Remove</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/new/prefix1/images/supprimer1.png</normaloff>:/new/prefix1/images/supprimer1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Close Codename One Linguist</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/save3.png</normaloff>:/new/prefix1/images/save3.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save translations</string>
+   </property>
+   <property name="statusTip">
+    <string>Save localization contents</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/open.png</normaloff>:/new/prefix1/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+   <property name="statusTip">
+    <string>Open localization file (C1L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_in_CodenameOne_Resource_file">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/cn1.png</normaloff>:/new/prefix1/images/cn1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add into &amp;Resource file (theme.res)...</string>
+   </property>
+   <property name="statusTip">
+    <string>Add localization contents to the project resource file (RES)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionSet_CodenameOne_Designer_app">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/settings2.png</normaloff>:/new/prefix1/images/settings2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Set Codename One Designer and Java locations...</string>
+   </property>
+   <property name="statusTip">
+    <string>Add Codename One Designer and Java JDK path</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/Info.png</normaloff>:/new/prefix1/images/Info.png</iconset>
+   </property>
+   <property name="text">
+    <string>A&amp;bout...</string>
+   </property>
+   <property name="statusTip">
+    <string>About Codename One Linguist</string>
+   </property>
+  </action>
+  <action name="actionRecent_project_file">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/file.png</normaloff>:/new/prefix1/images/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recent project file</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the last recent localization file</string>
+   </property>
+  </action>
+  <action name="actionAdd_General_Keys">
+   <property name="text">
+    <string>Add General Keys</string>
+   </property>
+  </action>
+  <action name="actionAdd_Calendar_Keys">
+   <property name="text">
+    <string>Add Calendar Keys</string>
+   </property>
+  </action>
+  <action name="actionAdd_PullToRefresh_Keys">
+   <property name="text">
+    <string>Add Pull To Refresh Keys</string>
+   </property>
+  </action>
+  <action name="actionAdd_RTL_Key">
+   <property name="text">
+    <string>Add RTL Key...</string>
+   </property>
+  </action>
+  <action name="actionEnable_Disable_Fusion_Theme">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable/Disable Fusion Theme</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
