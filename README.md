@@ -8,7 +8,7 @@
 ### Overview :
 Codename One Linguist is a free desktop software and a Codename One library (CN1LIB) to internationalize/localize your Codename One mobile application. 
 It's more friendly, simple and complete than the localization tool built into Codename One Designer. 
-You can [download this app](LIEN ICI) alone or download [CodenameOne Toolbox](https://ericlight.github.io/CN1Toolbox) which contains this tool and another tool ([CodenameOne Extensions](https://ericlight.github.io/CN1Extensions)).
+You can [download this app](https://github.com/ericlight/CN1Linguist/releases/download/1.0/CN1Linguist-1.0-windows-x64.zip) alone or download [CodenameOne Toolbox](https://ericlight.github.io/CN1Toolbox) which contains this tool and another tool ([CodenameOne Extensions](https://ericlight.github.io/CN1Extensions)).
 
 ### Features :
 - Extract words from your Java source code files
@@ -33,11 +33,11 @@ You can [download this app](LIEN ICI) alone or download [CodenameOne Toolbox](ht
 
 
 ### Requirements :
-- Windows PC - I'am a Windows user so this [first release](LIEN ICI) of Codename One Linguist is built for Windows. 
+- Windows PC - I'am a Windows user so this [first release](https://github.com/ericlight/CN1Linguist/releases/download/1.0/CN1Linguist-1.0-windows-x64.zip) of Codename One Linguist is built for Windows. 
 The source code is completely portable and cross-platform (written in C++/Qt) so if you are a Mac OS or Linux user, please clone the source code on GitHub and contribute by building it for Mac OS and Linux users. 
 I can help you with some instructions to do it if you want. Check the Contributions section for more informations. Thanks :) 
 
-- Codename One Linguist Library - You have to use this software with a CN1LIB. You can [download it here](LIEN ICI) or via Extensions with the Codename One Preferences window. Once downloaded, you have to add it in your project.
+- Codename One Linguist Library - You have to use this software with a CN1LIB. You can [download it here](https://github.com/ericlight/CN1Linguist/releases/download/1.0/CN1LinguistLib.cn1lib) or via Extensions with the Codename One Preferences window. Once downloaded, you have to add it in your project.
 
 ### How to use the library :
 Once the [library downloaded and installed in your project](https://www.codenameone.com/blog/automatically-install-update-distribute-cn1libs-extensions.html), do the following things : 
@@ -55,7 +55,7 @@ There are 186 languages available for you as a constants in the CL class. This c
 
 ![Image](screenshots/cn1linguist3.png "")
 
-Check the [video below](LIEN ICI) to learn the entire translation process using the software. 
+Check the video below to learn the entire translation process using the software. 
 
 ### Video tutorial :
 ![Image](screenshots/tutorial.jpg "")
