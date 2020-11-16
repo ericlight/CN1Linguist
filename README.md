@@ -8,7 +8,7 @@
 ### Overview :
 Codename One Linguist is a free desktop software and a Codename One library (CN1LIB) to internationalize/localize your Codename One mobile application. 
 It's more friendly, simple and complete than the localization tool built into Codename One Designer. 
-You can [download this app](https://github.com/ericlight/CN1Linguist/releases/download/1.0/CN1Linguist-1.0-windows-x64.zip) alone or download [CodenameOne Toolbox](https://ericlight.github.io/CN1Toolbox) which contains this tool and another tool ([CodenameOne Extensions](https://ericlight.github.io/CN1Extensions)).
+You can [download this app](https://github.com/ericlight/CN1Linguist/releases/tag/1.0) alone or download [CodenameOne Toolbox](https://ericlight.github.io/CN1Toolbox) which contains this tool and another tool ([CodenameOne Extensions](https://ericlight.github.io/CN1Extensions)).
 
 ### Features :
 - Extract words from your Java source code files
@@ -33,7 +33,7 @@ You can [download this app](https://github.com/ericlight/CN1Linguist/releases/do
 
 
 ### Requirements :
-- Windows PC - I'am a Windows user so this [first release](https://github.com/ericlight/CN1Linguist/releases/download/1.0/CN1Linguist-1.0-windows-x64.zip) of Codename One Linguist is built for Windows. 
+- Windows PC - I'am a Windows user so this [first release](https://github.com/ericlight/CN1Linguist/releases/tag/1.0) of Codename One Linguist is built for Windows. 
 The source code is completely portable and cross-platform (written in C++/Qt) so if you are a Mac OS or Linux user, please clone the source code on GitHub and contribute by building it for Mac OS and Linux users. 
 I can help you with some instructions to do it if you want. Check the Contributions section for more informations. Thanks :) 
 
